@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA\\ProjetoEscola_API].csproj": {}
+    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoEscola_API].csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA\\ProjetoEscola_API].csproj": {
+    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoEscola_API].csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA\\ProjetoEscola_API].csproj",
+        "projectUniqueName": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoEscola_API].csproj",
         "projectName": "ProjetoEscola_API]",
-        "projectPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA\\ProjetoEscola_API].csproj",
+        "projectPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoEscola_API].csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA\\obj\\",
+        "outputPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +43,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.31, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

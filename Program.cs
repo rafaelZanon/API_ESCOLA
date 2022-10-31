@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ProjetoEscola_API.Data;
+using ProjetoLoja_API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 //Allow CORS
@@ -26,7 +26,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add DbContext
-builder.Services.AddDbContext<EscolaContext>(options =>{
+builder.Services.AddDbContext<LojaContext>(options =>{
 options.UseSqlServer(builder.Configuration.GetConnectionString("StringConexaoSQLServer"));
 });
 

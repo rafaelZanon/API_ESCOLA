@@ -1,14 +1,7 @@
 using System.Data;
-using System.Security.AccessControl;
-using System;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using LoginRegistrarApp.Models;
+using System.Data.SqlClient;
 
 namespace LoginRegistrarApp.Controllers
 {
@@ -18,8 +11,9 @@ namespace LoginRegistrarApp.Controllers
     public class RegistrarController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        
 
-        public RegistrarController(IConfiguration _configuration)
+        public RegistrarController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
@@ -29,12 +23,12 @@ namespace LoginRegistrarApp.Controllers
 
         public string registrar(Registrar registrar)
         {
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("StringConexaoSQLServer").toString());
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("StringConexaoSQLServer").ToString());
 
             SqlCommand cmd = new SqlCommand("INSERT INTO Registrar(UserName,Password,Email,IsActive) VALUES('" + registrar.UserName+ "','" + registrar.Password+ "', '" + registrar.Email+ "', '" + registrar.IsActive+ "')", connection);
         
             connection.Open();
-            int i = cmd.ExcuteNonQuery();
+            int i = cmd.ExecuteNonQuery();
             connection.Close();
             if (i > 0)
             {
@@ -50,7 +44,7 @@ namespace LoginRegistrarApp.Controllers
         [Route("login")]
         public string login(Registrar registrar)
         {
-            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("StringConexaoSQLServer").toString());
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("StringConexaoSQLServer").ToString());
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Registrar WHERE Email = '"+registrar.Email+"' AND Password = '"+registrar.Password+"' AND IsActive = 1 ", connection);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);

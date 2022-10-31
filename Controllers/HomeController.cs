@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-namespace ProjetoEscola_API.Controllers
+namespace ProjetoLoja_API.Controllers
 {
     [ApiController]
     [Route("/")]
