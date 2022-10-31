@@ -33,7 +33,7 @@ return _context.Cliente.ToList();
                 if (await _context.SaveChangesAsync() == 1)
                 {
                     //return Ok();
-                    return Created($"/api/Cliente/{model.UserName}", model);
+                    return Created($"/api/Cliente/{model.userName}", model);
                 }
             }
             catch
@@ -44,12 +44,12 @@ return _context.Cliente.ToList();
             return BadRequest();
         }
 
-        [HttpGet("{ClienteId}")]
-        public ActionResult<List<Cliente>> Get(int ClienteId)
+        [HttpGet("{Id}")]
+        public ActionResult<List<Cliente>> Get(int Id)
         {
             try
             {
-                var result = _context.Cliente.Find(ClienteId);
+                var result = _context.Cliente.Find(Id);
                 if (result == null)
                 {
                     return NotFound();
@@ -61,13 +61,13 @@ return _context.Cliente.ToList();
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Falha no acesso ao banco de dados.");
             }
         }
-        [HttpDelete("{ClienteId}")]
-        public async Task<ActionResult> delete(int ClienteId)
+        [HttpDelete("{Id}")]
+        public async Task<ActionResult> delete(int Id)
         {
             try
             {
                 //verifica se existe Cliente a ser excluído
-                var cliente = await _context.Cliente.FindAsync(ClienteId);
+                var cliente = await _context.Cliente.FindAsync(Id);
                 if (cliente == null)
                 {           
                     return NotFound();
@@ -86,17 +86,19 @@ return _context.Cliente.ToList();
         {
             try
             {
+                Console.WriteLine(ClienteId.ToString());
+                Console.WriteLine(dadosClienteAlt);
                 //verifica se existe Cliente a ser alterado
                 var result = await _context.Cliente.FindAsync(ClienteId);
                 if (ClienteId != result.id)
                 {
                     return BadRequest();
                 }
-                result.UserName = dadosClienteAlt.UserName;
-                result.RealName = dadosClienteAlt.RealName;
-                result.Email = dadosClienteAlt.Email;
+                result.userName = dadosClienteAlt.userName;
+                result.realName = dadosClienteAlt.realName;
+                result.email = dadosClienteAlt.email;
                 await _context.SaveChangesAsync();
-                return Created($"/api/Cliente/{dadosClienteAlt.UserName}", dadosClienteAlt);
+                return Created($"/api/Cliente/{dadosClienteAlt.userName}", dadosClienteAlt);
             }
             catch
             {

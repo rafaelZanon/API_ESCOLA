@@ -4,10 +4,10 @@ namespace ProjetoLoja_API.Models
     {
         public int id {get; set;}
 
-        public string? UserName {get; set;}
+        public string? userName {get; set;}
 
-        public string? RealName {get; set;}
+        public string? realName {get; set;}
 
-        public int Email {get; set;}
+        public string? email {get; set;}
     }
 }

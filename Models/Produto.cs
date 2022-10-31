@@ -8,6 +8,6 @@ namespace ProjetoLoja_API.Models
 
         public string? nomeProd { get; set;}
 
-        public DateTime? dataProd { get; set;}
+        public string? dataProd { get; set;}
     }
 }
