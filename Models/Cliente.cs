@@ -6,8 +6,10 @@ namespace ProjetoLoja_API.Models
 
         public string? userName {get; set;}
 
-        public string? realName {get; set;}
+        public string? senha {get; set;}
 
         public string? email {get; set;}
+
+        public string? role { get; set; }
     }
 }

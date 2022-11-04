@@ -75,3 +75,4 @@ C:\Users\rafae\Desktop\BackTrabPat\API_ESCOLA_COMMUNITY\obj\Debug\net6.0\refint\
 C:\Users\rafae\Desktop\BackTrabPat\API_ESCOLA_COMMUNITY\obj\Debug\net6.0\ProjetoLoja_API.pdb
 C:\Users\rafae\Desktop\BackTrabPat\API_ESCOLA_COMMUNITY\obj\Debug\net6.0\ProjetoLoja_API.genruntimeconfig.cache
 C:\Users\rafae\Desktop\BackTrabPat\API_ESCOLA_COMMUNITY\obj\Debug\net6.0\ref\ProjetoLoja_API.dll
+C:\Users\rafae\Desktop\BackTrabPat\API_ESCOLA_COMMUNITY\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

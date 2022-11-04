@@ -95,10 +95,11 @@ return _context.Cliente.ToList();
                     return BadRequest();
                 }
                 result.userName = dadosClienteAlt.userName;
-                result.realName = dadosClienteAlt.realName;
+                result.senha = dadosClienteAlt.senha;
                 result.email = dadosClienteAlt.email;
+                result.role = dadosClienteAlt.role;
                 await _context.SaveChangesAsync();
-                return Created($"/api/Cliente/{dadosClienteAlt.userName}", dadosClienteAlt);
+                return Created($"/api/Cliente/{dadosClienteAlt.id}", dadosClienteAlt);
             }
             catch
             {
