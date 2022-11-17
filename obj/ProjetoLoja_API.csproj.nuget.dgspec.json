@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoLoja_API.csproj": {}
+    "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\ProjetoLoja_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoLoja_API.csproj": {
+    "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\ProjetoLoja_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoLoja_API.csproj",
+        "projectUniqueName": "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\ProjetoLoja_API.csproj",
         "projectName": "ProjetoLoja_API",
-        "projectPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoLoja_API.csproj",
+        "projectPath": "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\ProjetoLoja_API.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\obj\\",
+        "outputPath": "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
