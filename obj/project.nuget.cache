@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EMTezUgZPhi//SL16WjcSUscFqDOPa3spQsUl1s4kP7yVVegIQ0Owt8+gJLsp+4iEwrJaho97szACqund7wjrg==",
+  "dgSpecHash": "gmj5ZWlrzWMACLqhYEFpBD9eFBO0ruy7i/52cCkuPeuWH0xTJPpyCxFPpEt3cqKAu5CccaDHGIkBs0y3blew2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rafae\\Desktop\\BackTrabPat\\API_ESCOLA_COMMUNITY\\ProjetoLoja_API.csproj",
+  "projectFilePath": "C:\\Users\\rafae\\Desktop\\Trabalho_Final\\[BE]_LOJA\\API_LOJA\\ProjetoLoja_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafae\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\rafae\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
